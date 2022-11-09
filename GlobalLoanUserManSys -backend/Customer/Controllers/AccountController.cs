@@ -85,6 +85,7 @@ namespace Customer.Controllers
             {
                 ac.DeleteAccnt(id);
                 return StatusCode(200, NoContent());
+                //comment added for new commit
             }
             catch (Exception ex)
             {

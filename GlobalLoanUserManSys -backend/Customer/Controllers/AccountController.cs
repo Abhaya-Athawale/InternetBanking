@@ -2,6 +2,7 @@
 using Customer.Entity;
 using Customer.Services;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -21,6 +22,7 @@ namespace Customer.Controllers
 
         // GET: api/<AccountController>
         [HttpGet,Route("GetAccounts")]
+        [Authorize]
         public IActionResult Get()
         {
             try
@@ -33,6 +35,7 @@ namespace Customer.Controllers
             }
         }
         [HttpPost, Route("Applyloan")]
+        [Authorize]
         public IActionResult Applyloan( int Cusid, string branch, int amount)
         {
             try
@@ -56,6 +59,7 @@ namespace Customer.Controllers
         }
         // GET api/<AccountController>/5
         [HttpGet,Route("GetAccntById/{id}")]
+        [Authorize]
         public IActionResult Get(int id)
         {
             try
@@ -85,6 +89,7 @@ namespace Customer.Controllers
 
         // PUT api/<AccountController>/5
         [HttpPut,Route("editAccount/{id}")]
+        [Authorize]
         public IActionResult Put(int id, [FromBody] Account value)
         {
             try
@@ -100,6 +105,7 @@ namespace Customer.Controllers
 
         // DELETE api/<AccountController>/5
         [HttpDelete,Route("DeleteAccount/{id}")]
+        [Authorize]
         public IActionResult Delete(int id)
         {
             try

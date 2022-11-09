@@ -1,9 +1,9 @@
 ﻿using Customer.Entity;
 using Customer.Interfaces;
 using Customer.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-
 namespace Customer.Controllers
 {
 
@@ -12,11 +12,15 @@ namespace Customer.Controllers
     public class CustomerLoginController : ControllerBase
     {
         private readonly CustomerLoginService c;
-        public CustomerLoginController()
+        private readonly IConfiguration configuration;
+
+        public CustomerLoginController(IConfiguration configuration)
         {
-            this.c = new CustomerLoginService();
+            
+            this.c = new CustomerLoginService(configuration);
+
         }
-        [HttpGet("GetById")]
+        [HttpGet("GetById/{id}")]
         public IActionResult GetById(int id)
         {
             customerLogin cus = c.GetbyId(id);
@@ -26,13 +30,14 @@ namespace Customer.Controllers
 
         public IActionResult login(int id,string pass)
         {
-            int val = c.login(id, pass);
-            if (val == 0)
-                return StatusCode(403, "Forbidden");
-            return  StatusCode(200, "OK");
+            customerLogin cus = c.login(id, pass);
+            if (cus==null)
+                return StatusCode(403, "User Not Found");
+            return  StatusCode(200, c.GenerateToken(cus));
         }
 
         [HttpGet("GetAll")]
+        [Authorize]
         public IActionResult GetAll()
         {
             List<customerLogin> customers = c.GetAll();
@@ -49,12 +54,14 @@ namespace Customer.Controllers
                 return StatusCode(200, "Customer ID Not found!");
         }
         [HttpPut("edit")]
+        [Authorize]
         public IActionResult Edit(customerLogin cus)
         {
             c.Edit(cus);
             return StatusCode(200, cus);
         }
-        [HttpDelete("delete")]
+        [HttpDelete("delete/{id}")]
+        [Authorize]
         public IActionResult Delete(int id)
         {
             c.Delete(id);

@@ -1,5 +1,6 @@
 ﻿using Customer.Entity;
 using Customer.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,7 +15,8 @@ namespace Customer.Controllers
         {
             this.c = new CustomerService();
         }
-        [HttpGet("GetById")]
+        [HttpGet("GetById/{id}")]
+        [Authorize]
         public IActionResult GetById(int id)
         {
             customer cus = c.GetbyId(id);
@@ -23,6 +25,7 @@ namespace Customer.Controllers
 
 
         [HttpGet("GetAll")]
+        [Authorize]
         public IActionResult GetAll()
         {
             List<customer> customers = c.GetAll();
@@ -42,12 +45,14 @@ namespace Customer.Controllers
             return StatusCode(200, "Registered");
         }
         [HttpPut("edit")]
+        [Authorize]
         public IActionResult Edit(customer cus)
         {
             c.Edit(cus);
             return StatusCode(200, cus);
         }
-        [HttpDelete("delete")]
+        [HttpDelete("delete/{id}")]
+        [Authorize]
         public IActionResult Delete(int id)
         {
             c.Delete(id);

@@ -2,6 +2,7 @@
 using Customer.Entity;
 using Customer.Services;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -10,6 +11,8 @@ namespace Customer.Controllers
     
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
+
     public class TransactionController : ControllerBase
     {
         private readonly TransactionService tr;
@@ -21,6 +24,7 @@ namespace Customer.Controllers
 
         // GET: api/<TransactionController>
         [HttpGet,Route("GetTransactions")]
+        
         public IActionResult Get()
         {
             try

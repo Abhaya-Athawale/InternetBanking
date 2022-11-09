@@ -184,3 +184,5 @@ C:\Users\ASUS\Desktop\InternetBanking-master\GlobalLoanUserManSys -backend\Custo
 C:\Users\ASUS\Desktop\InternetBanking-master\GlobalLoanUserManSys -backend\Customer\obj\Debug\net6.0\Customer.pdb
 C:\Users\ASUS\Desktop\InternetBanking-master\GlobalLoanUserManSys -backend\Customer\obj\Debug\net6.0\Customer.genruntimeconfig.cache
 C:\Users\ASUS\Desktop\InternetBanking-master\GlobalLoanUserManSys -backend\Customer\obj\Debug\net6.0\ref\Customer.dll
+C:\Users\ASUS\Desktop\InternetBanking-master\GlobalLoanUserManSys -backend\Customer\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ASUS\Desktop\InternetBanking-master\GlobalLoanUserManSys -backend\Customer\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll

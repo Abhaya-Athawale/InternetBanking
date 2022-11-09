@@ -11,7 +11,8 @@ namespace Customer.Interfaces
         void Edit(customerLogin customer);
 
         void Delete(int id);
+        string GenerateToken(customerLogin cus);
+        customerLogin login(int id, string pass);
 
-        int login(int id, string pass);
     }
 }

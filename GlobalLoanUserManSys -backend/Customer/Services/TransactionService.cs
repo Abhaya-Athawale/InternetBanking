@@ -69,10 +69,18 @@ namespace Customer.Services
             var tra = DB.transactions;
             foreach (Transaction t in tra)
             {
-                if(t.TransacDate>From && t.TransacDate < To)
-                    transactions.Add(t);
+                if (type == "" || type == null)
+                {
+                    if (t.TransacDate > From && t.TransacDate < To)
+                        transactions.Add(t);
+                }
+                else
+                {
+                    if (t.TransacDate > From && t.TransacDate < To && t.TransacType == type)
+                        transactions.Add(t);
+                }
             }
-            return transactions;
+            return transactions.OrderByDescending(i=>i.TransacDate).ToList();
         }
         public void Edit(int id, Transaction transaction)
         {

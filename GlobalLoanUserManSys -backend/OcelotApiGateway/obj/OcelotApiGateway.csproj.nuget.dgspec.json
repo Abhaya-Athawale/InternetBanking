@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Abhaya\\VS_2022\\InternetBankingApplication-back\\GlobalLoanUserManSys -backend\\Customer\\Customer.csproj": {}
+    "F:\\Abhaya\\VS_2022\\InternetBankingApplication-back\\GlobalLoanUserManSys -backend\\OcelotApiGateway\\OcelotApiGateway.csproj": {}
   },
   "projects": {
-    "F:\\Abhaya\\VS_2022\\InternetBankingApplication-back\\GlobalLoanUserManSys -backend\\Customer\\Customer.csproj": {
+    "F:\\Abhaya\\VS_2022\\InternetBankingApplication-back\\GlobalLoanUserManSys -backend\\OcelotApiGateway\\OcelotApiGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Abhaya\\VS_2022\\InternetBankingApplication-back\\GlobalLoanUserManSys -backend\\Customer\\Customer.csproj",
-        "projectName": "Customer",
-        "projectPath": "F:\\Abhaya\\VS_2022\\InternetBankingApplication-back\\GlobalLoanUserManSys -backend\\Customer\\Customer.csproj",
+        "projectUniqueName": "F:\\Abhaya\\VS_2022\\InternetBankingApplication-back\\GlobalLoanUserManSys -backend\\OcelotApiGateway\\OcelotApiGateway.csproj",
+        "projectName": "OcelotApiGateway",
+        "projectPath": "F:\\Abhaya\\VS_2022\\InternetBankingApplication-back\\GlobalLoanUserManSys -backend\\OcelotApiGateway\\OcelotApiGateway.csproj",
         "packagesPath": "C:\\Users\\abhay\\.nuget\\packages\\",
-        "outputPath": "F:\\Abhaya\\VS_2022\\InternetBankingApplication-back\\GlobalLoanUserManSys -backend\\Customer\\obj\\",
+        "outputPath": "F:\\Abhaya\\VS_2022\\InternetBankingApplication-back\\GlobalLoanUserManSys -backend\\OcelotApiGateway\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\abhay\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,16 +40,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[6.0.10, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.10, )"
-            },
             "Ocelot": {
               "target": "Package",
               "version": "[18.0.0, )"

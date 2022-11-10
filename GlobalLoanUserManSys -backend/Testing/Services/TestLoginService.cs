@@ -1,5 +1,6 @@
 ﻿using Customer.Controllers;
 using Customer.Database;
+using Customer.Entity;
 using Customer.Services;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
@@ -21,8 +22,11 @@ namespace Testing.Services
         public async Task CorrectLogin()
         {
             CustomerLoginService c = new CustomerLoginService(_config);
-
-           var token =  c.login(1, "asd");
+            customerLogin cus = new customerLogin();
+            cus.CustomerId = 1;
+            cus.Password = "asd";
+            cus.LoginId = 0;
+           var token =  c.login(cus);
            
             token.Should().NotBeNull();
             
@@ -32,8 +36,12 @@ namespace Testing.Services
         public async Task IncorrectPassword()
         {
             CustomerLoginService c = new CustomerLoginService(_config);
-
-            var token = c.login(1, "asdx");
+            customerLogin cus = new customerLogin();
+            cus.CustomerId = 1;
+            cus.Password = "asdx";
+            cus.LoginId = 0;
+            var token = c.login(cus);
+            
            
             token.Should().BeNull();
 
@@ -43,8 +51,12 @@ namespace Testing.Services
         public async Task IncorrectUsername()
         {
             CustomerLoginService c = new CustomerLoginService(_config);
-
-            var token = c.login(78, "asd");
+            customerLogin cus = new customerLogin();
+            cus.CustomerId = 78;
+            cus.Password = "asd";
+            cus.LoginId = 0;
+            var token = c.login(cus);
+            
 
             token.Should().BeNull();
 

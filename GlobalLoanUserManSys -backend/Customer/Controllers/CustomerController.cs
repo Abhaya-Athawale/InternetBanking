@@ -39,10 +39,12 @@ namespace Customer.Controllers
             return StatusCode(200, cus);
         }
         [HttpPost("Register")]
-        public IActionResult Register(string FirstName, string LastName, string MiddleName, string CustomerCity, string CustomerContactNo, string Occupation, DateTime CustomerDob)
+        public IActionResult Register(customer Cus)
         {
-         c.Register(FirstName,LastName,MiddleName,CustomerCity,CustomerContactNo, Occupation, CustomerDob);
-            return StatusCode(200, "Registered");
+            customer c1 = c.Register(Cus);
+         if (c1==null)
+                return StatusCode(403, "Error in Registration");
+            return StatusCode(200, c1);
         }
         [HttpPut("edit")]
         [Authorize]

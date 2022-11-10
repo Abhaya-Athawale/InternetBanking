@@ -12,7 +12,7 @@ namespace Customer.Interfaces
 
         void Delete(int id);
 
-        int Register(string FirstName,string LastName , string MiddleName , string CustomerCity , string CustomerContactNo , string Occupation , DateTime CustomerDob);
+        customer Register(customer Cus);
 
         
 

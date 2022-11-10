@@ -18,28 +18,30 @@ namespace Customer.Services
 
             
         }
-        public int Register(string FirstName, string LastName, string MiddleName, string CustomerCity, string CustomerContactNo, string Occupation, DateTime CustomerDob)
+        public customer Register(customer Cus)
         {
-            if ((!IsDigitsOnly(CustomerContactNo)) || CustomerContactNo.Length != 10)
-                return 1;
+            if ((!IsDigitsOnly(Cus.CustomerContactNo)) || Cus.CustomerContactNo.Length != 10)
+                return null;
             try
             {
                 customer cus = new customer();
-                cus.FirstName = FirstName;
-                cus.LastName = LastName;
-                cus.MiddleName = MiddleName;
-                cus.CustomerCity = CustomerCity;
-                cus.CustomerContactNo = CustomerContactNo;
-                cus.CustomerDob = CustomerDob;
-                cus.Occupation = Occupation;
+                cus.FirstName = Cus.FirstName;
+                cus.LastName = Cus.LastName;
+                cus.MiddleName = Cus.MiddleName;
+                cus.CustomerCity = Cus.CustomerCity;
+                cus.CustomerContactNo = Cus.CustomerContactNo;
+                cus.CustomerDob = Cus.CustomerDob;
+                cus.Occupation = Cus.Occupation;
                 cus.CustomerId = 0;
                 db.customers.Add(cus);
                 db.SaveChanges();
-                return 0;
+                int m=db.customers.Select(p => p.CustomerId).Max();
+                customer cus2 = db.customers.FirstOrDefault(i => i.CustomerId == m);
+                return cus2;
             }
             catch(Exception ex)
             {
-                return -1;
+                return null;
             }
 
         }

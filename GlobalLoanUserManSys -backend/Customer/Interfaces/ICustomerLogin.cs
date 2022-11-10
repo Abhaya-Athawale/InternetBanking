@@ -12,7 +12,7 @@ namespace Customer.Interfaces
 
         void Delete(int id);
         string GenerateToken(customerLogin cus);
-        customerLogin login(int id, string pass);
+        customerLogin login(customerLogin cus);
 
     }
 }

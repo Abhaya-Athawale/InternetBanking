@@ -79,11 +79,11 @@ namespace Customer.Controllers
             }
         }
         [HttpPost, Route("TransactionManagement")]
-        public IActionResult TransactionManagement(int CusId, string type, int amount)
+        public IActionResult TransactionManagement(Transaction transaction)
         {
             try
             {
-               int res =  tr.TransactionManagement(CusId, type, amount);
+               int res =  tr.TransactionManagement(transaction.CustomerId, transaction.TransacType, transaction.TransacAmnt);
                 
                
                    

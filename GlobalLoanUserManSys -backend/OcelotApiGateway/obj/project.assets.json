@@ -940,11 +940,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\InternetBanking-master\\GlobalLoanUserManSys -backend\\OcelotApiGateway\\OcelotApiGateway.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\Downloads\\InternetBanking-back\\GlobalLoanUserManSys -backend\\OcelotApiGateway\\OcelotApiGateway.csproj",
       "projectName": "OcelotApiGateway",
-      "projectPath": "C:\\Users\\ASUS\\Desktop\\InternetBanking-master\\GlobalLoanUserManSys -backend\\OcelotApiGateway\\OcelotApiGateway.csproj",
+      "projectPath": "C:\\Users\\ASUS\\Downloads\\InternetBanking-back\\GlobalLoanUserManSys -backend\\OcelotApiGateway\\OcelotApiGateway.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\Desktop\\InternetBanking-master\\GlobalLoanUserManSys -backend\\OcelotApiGateway\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\Downloads\\InternetBanking-back\\GlobalLoanUserManSys -backend\\OcelotApiGateway\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -30,13 +30,18 @@ namespace Customer.Controllers
         }
         [HttpPost("login")]
 
-        public IActionResult login(int id,string pass)
+        public IActionResult login(customerLogin Cus)
         {
-            customerLogin cus = c.login(id, pass);
-            if (cus==null)
+            customerLogin cus = c.login(Cus);
+            if (cus == null)
                 return StatusCode(403, "User Not Found");
-           
-            return  Ok(c.GenerateToken(cus));
+            var res = new
+            {
+                token= c.GenerateToken(cus),
+                customerLogin =cus
+
+          };
+            return  Ok(res);
         }
 
         [HttpGet("GetAll")]

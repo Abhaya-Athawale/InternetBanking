@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Desktop\\InternetBanking-master\\GlobalLoanUserManSys -backend\\Testing\\Testing.csproj": {}
+    "C:\\Users\\ASUS\\Downloads\\InternetBanking-back\\GlobalLoanUserManSys -backend\\Testing\\Testing.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Desktop\\InternetBanking-master\\GlobalLoanUserManSys -backend\\Customer\\Customer.csproj": {
+    "C:\\Users\\ASUS\\Downloads\\InternetBanking-back\\GlobalLoanUserManSys -backend\\Customer\\Customer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\InternetBanking-master\\GlobalLoanUserManSys -backend\\Customer\\Customer.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Downloads\\InternetBanking-back\\GlobalLoanUserManSys -backend\\Customer\\Customer.csproj",
         "projectName": "Customer",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\InternetBanking-master\\GlobalLoanUserManSys -backend\\Customer\\Customer.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Downloads\\InternetBanking-back\\GlobalLoanUserManSys -backend\\Customer\\Customer.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\InternetBanking-master\\GlobalLoanUserManSys -backend\\Customer\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Downloads\\InternetBanking-back\\GlobalLoanUserManSys -backend\\Customer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -98,14 +98,14 @@
         }
       }
     },
-    "C:\\Users\\ASUS\\Desktop\\InternetBanking-master\\GlobalLoanUserManSys -backend\\Testing\\Testing.csproj": {
+    "C:\\Users\\ASUS\\Downloads\\InternetBanking-back\\GlobalLoanUserManSys -backend\\Testing\\Testing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\InternetBanking-master\\GlobalLoanUserManSys -backend\\Testing\\Testing.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Downloads\\InternetBanking-back\\GlobalLoanUserManSys -backend\\Testing\\Testing.csproj",
         "projectName": "Testing",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\InternetBanking-master\\GlobalLoanUserManSys -backend\\Testing\\Testing.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Downloads\\InternetBanking-back\\GlobalLoanUserManSys -backend\\Testing\\Testing.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\InternetBanking-master\\GlobalLoanUserManSys -backend\\Testing\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Downloads\\InternetBanking-back\\GlobalLoanUserManSys -backend\\Testing\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -122,8 +122,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ASUS\\Desktop\\InternetBanking-master\\GlobalLoanUserManSys -backend\\Customer\\Customer.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\Desktop\\InternetBanking-master\\GlobalLoanUserManSys -backend\\Customer\\Customer.csproj"
+              "C:\\Users\\ASUS\\Downloads\\InternetBanking-back\\GlobalLoanUserManSys -backend\\Customer\\Customer.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Downloads\\InternetBanking-back\\GlobalLoanUserManSys -backend\\Customer\\Customer.csproj"
               }
             }
           }

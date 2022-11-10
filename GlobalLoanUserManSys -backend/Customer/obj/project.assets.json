@@ -2751,11 +2751,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\InternetBanking-master\\GlobalLoanUserManSys -backend\\Customer\\Customer.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\Downloads\\InternetBanking-back\\GlobalLoanUserManSys -backend\\Customer\\Customer.csproj",
       "projectName": "Customer",
-      "projectPath": "C:\\Users\\ASUS\\Desktop\\InternetBanking-master\\GlobalLoanUserManSys -backend\\Customer\\Customer.csproj",
+      "projectPath": "C:\\Users\\ASUS\\Downloads\\InternetBanking-back\\GlobalLoanUserManSys -backend\\Customer\\Customer.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\Desktop\\InternetBanking-master\\GlobalLoanUserManSys -backend\\Customer\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\Downloads\\InternetBanking-back\\GlobalLoanUserManSys -backend\\Customer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",

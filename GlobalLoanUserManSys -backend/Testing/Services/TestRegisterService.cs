@@ -22,11 +22,21 @@ namespace Testing.Services
         {
             CustomerService c = new CustomerService();
             //string FirstName, string LastName, string MiddleName, string CustomerCity, string CustomerContactNo, string Occupation, DateTime CustomerDob
-            var res = c.Register("das", "mas", "has", "aluva", "9188037893", "Lender", DateTime.Parse("2022-11-10T04:59:08.758Z"));
+            customer cus = new customer();
+            cus.FirstName = "das";
+            cus.LastName = "mas";
+            cus.MiddleName = "has";
+            cus.CustomerCity = "aluva";
+            cus.CustomerContactNo = "9188037893";
+            cus.Occupation = "Lender";
+            cus.CustomerDob = DateTime.Parse("2022-11-10T04:59:08.758Z");
+            cus.CustomerId = 0;
+            var res = c.Register(cus);
+        
             customer delCus = db.customers.FirstOrDefault(i => i.Occupation == "Lender");
             db.customers.Remove(delCus);
             db.SaveChanges();
-            res.Should().Be(0);
+            res.Should().NotBeNull();
             
 
 
@@ -36,9 +46,18 @@ namespace Testing.Services
         {
             CustomerService c = new CustomerService();
             //string FirstName, string LastName, string MiddleName, string CustomerCity, string CustomerContactNo, string Occupation, DateTime CustomerDob
-            var res = c.Register("das", "mas", "has", "aluva", "918803777893", "Lender", DateTime.Parse("2022-11-10T04:59:08.758Z"));
-            
-            res.Should().Be(1);
+            customer cus = new customer();
+            cus.FirstName = "das";
+            cus.LastName = "mas";
+            cus.MiddleName = "has";
+            cus.CustomerCity = "aluva";
+            cus.CustomerContactNo = "918803777893";
+            cus.Occupation = "Lender";
+            cus.CustomerDob = DateTime.Parse("2022-11-10T04:59:08.758Z");
+            cus.CustomerId = 0;
+            var res = c.Register(cus);
+
+            res.Should().BeNull();
 
 
 
@@ -48,9 +67,18 @@ namespace Testing.Services
         {
             CustomerService c = new CustomerService();
             //string FirstName, string LastName, string MiddleName, string CustomerCity, string CustomerContactNo, string Occupation, DateTime CustomerDob
-            var res = c.Register("das", "mas", "has", "aluva", "918803t893", "Lender", DateTime.Parse("2022-11-10T04:59:08.758Z"));
-           
-            res.Should().Be(1);
+            customer cus = new customer();
+            cus.FirstName = "das";
+            cus.LastName = "mas";
+            cus.MiddleName = "has";
+            cus.CustomerCity = "aluva";
+            cus.CustomerContactNo = "918803t893";
+            cus.Occupation = "Lender";
+            cus.CustomerDob = DateTime.Parse("2022-11-10T04:59:08.758Z");
+            cus.CustomerId = 0;
+            var res = c.Register(cus);
+
+            res.Should().BeNull();
 
 
 

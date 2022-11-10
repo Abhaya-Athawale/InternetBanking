@@ -21,13 +21,13 @@ namespace Customer.Services
             this.db = new DBContext();
             _config = configuration;
         }
-        public customerLogin login(int id,string pass)
+        public customerLogin login(customerLogin Cus )
         {
 
-            customerLogin cus = db.customerLogins.FirstOrDefault(i => i.CustomerId == id);
+            customerLogin cus = db.customerLogins.FirstOrDefault(i => i.CustomerId == Cus.CustomerId);
             if (cus == null)
                 return null;
-            if (cus.Password == pass)
+            if (cus.Password == Cus.Password)
                 return cus;
             return null;
 

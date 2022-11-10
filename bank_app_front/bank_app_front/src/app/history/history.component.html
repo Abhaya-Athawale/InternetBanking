@@ -1,0 +1,19 @@
+<div>
+
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>Transaction_ID</th>
+      <th>Transaction_Type</th>
+      <th>Transaction_Amnt</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of list">
+      <td>{{item.transacId}}</td>
+      <td>{{item.transacType}}</td>
+      <td>{{item.transacAmnt}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>

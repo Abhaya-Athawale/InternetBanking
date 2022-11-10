@@ -1,0 +1,32 @@
+
+label {
+  display: inline-block;
+  width: 180px;
+  height: 25px;
+}
+
+h2 {
+  margin: 10px;
+}
+
+.btn {
+  width: 80%;
+  height: 100%
+}
+
+.align-left {
+  text-align: center;
+  border: 10px;
+  padding: 10px;
+}
+.container_class {
+  display: inline-block;
+  margin-top: 100px;
+  background-color: aliceblue;
+  padding-bottom: 15px;
+  width: 50%;
+}
+
+body {
+  text-align: center;
+}

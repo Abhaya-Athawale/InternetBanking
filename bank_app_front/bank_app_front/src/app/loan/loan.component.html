@@ -1,0 +1,38 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Angular Bootstrap 5 Examples</title>
+  <script src="https://kit.fontawesome.com/fa0e960898.js" crossorigin="anonymous"></script>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        Team 4
+      </a>
+    </div>
+  </nav>
+  <div class="container_class">
+
+    <h2>Global Bank User Loan Application Page</h2>
+
+    <form #loan = "ngForm" (ngSubmit) = "onClickSubmit($event)">
+      <label for="cid">Customer id:         </label>
+      <input type="text" id="cid" [(ngModel)]="cid" name="cid" value=""><br><br />
+      <label for="branch">Branch:</label>
+      <input type="text" id="branch" [(ngModel)]="branch" name="branch" value=""><br><br />
+      <label for="amt">Amount:</label>
+      <input type="number" id="amt" [(ngModel)]="amount" name="amt" value=""><br><br>
+      <button type="submit" class="btn btn-primary">Apply</button>
+    </form>
+  </div>
+
+
+
+
+</body>
+</html>
+

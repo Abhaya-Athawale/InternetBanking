@@ -1,0 +1,44 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Angular Bootstrap 5 Examples</title>
+  <script src="https://kit.fontawesome.com/fa0e960898.js" crossorigin="anonymous"></script>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        Team 4
+      </a>
+    </div>
+  </nav>
+  <div class="container_class">
+
+    <h2>Global Bank Branch Details Opening Page</h2>
+
+    <form #userregistration = "ngForm" >
+      <label for="cid">Customer id:         </label>
+      <input type="number" id="cid" [(ngModel)]="cid" name="cid" value=""><br><br />
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" [(ngModel)]="FirstName" name="fname" value=""><br><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" [(ngModel)]="LastName" name="lname" value=""><br><br>
+      <label for="city">Customer City:</label>
+      <input type="text" id="city" [(ngModel)]="CustomerCity" name="city" value=""><br><br>
+      <label for="occ">Customer Occupation:</label>
+      <input type="text" id="occ" [(ngModel)]="Occupation" name="occ" value=""><br><br>
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="CustomerDob" [(ngModel)]="CustomerDob" name="birthday"><br /><br />
+      <button type="submit" class="btn btn-primary" (click)="Add()">Register</button>
+    </form>
+  </div>
+
+
+
+
+</body>
+</html>
+

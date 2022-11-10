@@ -23,6 +23,7 @@ namespace Customer.Services
         }
         public customerLogin login(int id,string pass)
         {
+
             customerLogin cus = db.customerLogins.FirstOrDefault(i => i.CustomerId == id);
             if (cus == null)
                 return null;

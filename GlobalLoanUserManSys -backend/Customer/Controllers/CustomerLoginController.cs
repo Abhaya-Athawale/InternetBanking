@@ -4,6 +4,8 @@ using Customer.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Drawing.Printing;
+
 namespace Customer.Controllers
 {
 
@@ -33,7 +35,8 @@ namespace Customer.Controllers
             customerLogin cus = c.login(id, pass);
             if (cus==null)
                 return StatusCode(403, "User Not Found");
-            return  StatusCode(200, c.GenerateToken(cus));
+           
+            return  Ok(c.GenerateToken(cus));
         }
 
         [HttpGet("GetAll")]

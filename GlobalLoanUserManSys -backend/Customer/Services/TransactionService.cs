@@ -64,8 +64,14 @@ namespace Customer.Services
         }
         public List<Transaction> ViewStatment(int CusId, string type, DateTime From, DateTime To)
         {
-            List<Transaction> transactions = new List<Transaction>();
+            if(From.Date>To.Date)
+            {
+                return null;
 
+            }
+            List<Transaction> transactions = new List<Transaction>();
+            if (type != "Withdraw" && type != "Deposit" && type != null && type != "")
+                return null;
             var tra = DB.transactions;
             foreach (Transaction t in tra)
             {

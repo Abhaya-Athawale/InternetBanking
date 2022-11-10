@@ -20,18 +20,27 @@ namespace Customer.Services
         }
         public int Register(string FirstName, string LastName, string MiddleName, string CustomerCity, string CustomerContactNo, string Occupation, DateTime CustomerDob)
         {
-            customer cus = new customer();
-            cus.FirstName=FirstName;
-            cus.LastName=LastName;
-            cus.MiddleName=MiddleName;
-            cus.CustomerCity=CustomerCity;
-            cus.CustomerContactNo=CustomerContactNo;
-            cus.CustomerDob=CustomerDob;
-            cus.Occupation = Occupation;
-            cus.CustomerId = 0;
-            db.customers.Add(cus);
-            db.SaveChanges();
-            return 0;
+            if ((!IsDigitsOnly(CustomerContactNo)) || CustomerContactNo.Length != 10)
+                return 1;
+            try
+            {
+                customer cus = new customer();
+                cus.FirstName = FirstName;
+                cus.LastName = LastName;
+                cus.MiddleName = MiddleName;
+                cus.CustomerCity = CustomerCity;
+                cus.CustomerContactNo = CustomerContactNo;
+                cus.CustomerDob = CustomerDob;
+                cus.Occupation = Occupation;
+                cus.CustomerId = 0;
+                db.customers.Add(cus);
+                db.SaveChanges();
+                return 0;
+            }
+            catch(Exception ex)
+            {
+                return -1;
+            }
 
         }
 
@@ -59,6 +68,16 @@ namespace Customer.Services
         {
             customer cus = db.customers.FirstOrDefault(i => i.CustomerId == id);
             return cus;
+        }
+        bool IsDigitsOnly(string str)
+        {
+            foreach (char c in str)
+            {
+                if (c < '0' || c > '9')
+                    return false;
+            }
+
+            return true;
         }
     }
 }

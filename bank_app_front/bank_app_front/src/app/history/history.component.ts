@@ -15,7 +15,7 @@ export class HistoryComponent implements OnInit {
   customerId: number;
   accntId: number;
   transacType: string;
-  transacAmnt: string;
+  transacAmnt: number;
   transacDate: Date;
   obj: Transaction;
   errmsg: string;

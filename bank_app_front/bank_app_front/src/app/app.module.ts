@@ -10,6 +10,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoanComponent } from './loan/loan.component';
 import { UseropsComponent } from './userops/userops.component';
 import { HistoryComponent } from './history/history.component';
+import { TransactionComponent } from './transaction/transaction.component';
 
 
 //import { UserregistrationService } from './userregistration.service';
@@ -22,6 +23,7 @@ import { HistoryComponent } from './history/history.component';
     LoanComponent,
     UseropsComponent,
     HistoryComponent,
+    TransactionComponent,
     //HistoryComponent,
   ],
   imports: [
@@ -45,6 +47,10 @@ import { HistoryComponent } from './history/history.component';
       {
         path: 'history',
         component: HistoryComponent
+      },
+      {
+        path: 'transaction',
+        component: TransactionComponent
       }
     ]),
     NgbModule

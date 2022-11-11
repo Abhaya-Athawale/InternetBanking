@@ -14,6 +14,7 @@
         "outputPath": "C:\\Users\\RITIKA MANDAL\\Downloads\\InternetBanking\\GlobalLoanUserManSys -backend\\Customer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+          "C:\\Users\\RITIKA MANDAL\\Downloads\\InternetBanking\\bank_app_front\\bank_app_front\\NuGet.Config",
           "C:\\Users\\RITIKA MANDAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -21,7 +22,6 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

@@ -3,6 +3,6 @@ export class Transaction {
   customerId: number;
   accntId: number;
   transacType: string;
-  transacAmnt: string;
+  transacAmnt: number;
   transacDate: Date;
 }

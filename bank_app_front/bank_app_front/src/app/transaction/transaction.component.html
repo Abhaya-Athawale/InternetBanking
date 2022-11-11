@@ -20,18 +20,13 @@
     <h2>Global Bank Branch Transaction Page</h2>
 
     <form #userregistration="ngForm">
-      <label for="transacId">Transaction id:         </label>
-      <input type="number" id="transacId" [(ngModel)]="transacId" name="transacId" value=""><br><br />
+      
       <label for="customerId">Customer id:         </label>
       <input type="number" id="customerId" [(ngModel)]="customerId" name="customerId" value=""><br><br />
-      <label for="accntId">Account id:         </label>
-      <input type="number" id="accntId" [(ngModel)]="accntId" name="accntId" value=""><br><br />
       <label for="transacType">Transaction Type:</label>
       <input type="text" id="transacType" [(ngModel)]="transacType" name="transacType" value=""><br><br />
       <label for="transacAmnt">Transaction Amount:</label>
       <input type="number" id="transacAmnt" [(ngModel)]="transacAmnt" name="transacAmnt" value=""><br><br />
-      <label for="transacDate">Transaction Date:</label>
-      <input type="date" id="transacDate" [(ngModel)]="transacDate" name="transacDate"><br /><br />
       <button type="submit" class="btn btn-primary" (click)="Add()">Submit</button>
     </form>
   </div>

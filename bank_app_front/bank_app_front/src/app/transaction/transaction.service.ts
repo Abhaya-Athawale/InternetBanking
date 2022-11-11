@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Transaction } from '../Models/transaction.model';
+import { Tranmgmt } from '../Models/tranmgmt.model';
 
 
 @Injectable({
@@ -12,7 +12,7 @@ export class TransactionService {
   constructor() { }
 
   path: string = "http://localhost:5201/api/Transaction/";
-  public Add(item: Transaction): Observable<any> {
+  public Add(item: Tranmgmt): Observable<any> {
     console.log(item);
     return this.http.post(this.path + "TransactionManagement", item);
   }

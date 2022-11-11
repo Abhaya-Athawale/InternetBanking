@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Transaction } from '../Models/transaction.model';
+import { Tranmgmt } from '../Models/tranmgmt.model';
 import { TransactionService } from './transaction.service';
 
 @Component({
@@ -10,14 +10,11 @@ import { TransactionService } from './transaction.service';
 })
 export class TransactionComponent implements OnInit {
 
-  list: Transaction[];
-  transacId: number;
+  list: Tranmgmt[];
   customerId: number;
-  accntId: number;
   transacType: string;
   transacAmnt: number;
-  transacDate: Date;
-  obj: Transaction;
+  obj: Tranmgmt;
   errmsg: string;
   display: boolean = false;
 
@@ -27,13 +24,13 @@ export class TransactionComponent implements OnInit {
   }
 
   public Add() {
-    this.obj = new Transaction();
-    this.obj.transacId = this.transacId;
+    this.obj = new Tranmgmt();
+    //this.obj.transacId = this.transacId;
     this.obj.customerId = this.customerId;
-    this.obj.accntId = this.accntId;
+    //this.obj.accntId = this.accntId;
     this.obj.transacType = this.transacType;
     this.obj.transacAmnt = this.transacAmnt;
-    this.obj.transacDate = this.transacDate;
+    //this.obj.transacDate = this.transacDate;
 
     alert("Details added successfully");
 

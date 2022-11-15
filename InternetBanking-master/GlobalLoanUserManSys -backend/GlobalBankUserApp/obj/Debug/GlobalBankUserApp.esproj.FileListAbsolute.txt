@@ -1,0 +1,2 @@
+C:\Users\venul\source\repos\InternetBanking-master\GlobalLoanUserManSys -backend\GlobalBankUserApp\obj\Debug\GlobalBankUserApp.esproj.SuggestedBindingRedirects.cache
+C:\Users\venul\source\repos\InternetBanking-master\GlobalLoanUserManSys -backend\GlobalBankUserApp\obj\Debug\GlobalBankUserApp.esproj.CoreCompileInputs.cache

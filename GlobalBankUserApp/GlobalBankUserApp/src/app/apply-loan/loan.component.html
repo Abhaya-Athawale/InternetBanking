@@ -1,0 +1,22 @@
+
+<body>
+  <div class="container_class">
+
+    <h2>Global Bank User Loan Application Page</h2>
+
+    <form #loan = "ngForm" >
+      <label for="cid">Customer id:</label>
+      <input type="text" name="CustomerId" [(ngModel)]="customerId"><br><br />
+      <label for="branch">Branch:</label>
+      <input type="text" name="Branch" [(ngModel)]="branch"><br><br />
+      <label for="amt">Amount:</label>
+      <input type="number" name="Amount" [(ngModel)]="amount"><br><br>
+      <button type="submit" class="btn btn-primary" (click)="onClickSubmit()">Apply</button>
+    </form>
+  </div>
+
+
+
+
+</body>
+

@@ -1,0 +1,16 @@
+a{
+    cursor:pointer;
+}
+button {
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color:#5fd9e5;
+  border: 0px;
+  margin: 15px;
+  padding: 10px 20px 10px 20px;
+}
+thead{
+    background-color:#9cf1e6;
+}
+

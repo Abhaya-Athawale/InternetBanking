@@ -1,0 +1,28 @@
+<body>
+ 
+  <div class="container_class">
+
+    <h2>Global Bank Branch Details Opening Page</h2>
+
+    <form #userRegisterForm="ngForm">
+      <label for="cname">First name:</label>
+      <input type="text" name="firstName" [(ngModel)]="firstName"><br><br />
+      <label for="fname">Last name:</label>
+      <input type="text" name="lastName" [(ngModel)]="lastName"><br><br />
+      <label for="lname">Middle name:</label>
+      <input type="text" name="middleName" [(ngModel)]="middleName"><br><br>
+      <label for="city">Customer City:</label>
+      <input type="text" name="customerCity" [(ngModel)]="customerCity"><br><br>
+      <label for="city">Customer ContactNo:</label>
+      <input type="text" name="customerContactNo" [(ngModel)]="customerContactNo"><br><br>
+      <label for="occ">Customer Occupation:</label>
+      <input type="text" name="customerOccupation" [(ngModel)]="customerOccupation"><br><br>
+      <label for="birthday">Birthday:</label>
+      <input type="date" name="customerDob" [(ngModel)]="customerDob"><br /><br />
+      <label for="password">Password:</label>
+      <input type="password" name="password" [(ngModel)]="password"><br /><br />
+      <button type="submit" class="btn btn-primary" (click)="registerUser()">Register</button>
+    </form>
+    
+  </div>
+</body>

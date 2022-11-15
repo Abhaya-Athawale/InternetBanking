@@ -1,0 +1,27 @@
+<form #loginForm="ngForm" >
+  <div class="user-login">
+    <h1> Global Bank User Login</h1>
+    <label> Enter Username: </label>
+    <input type="number" name="customerId" [(ngModel)]="customerId"/>
+    <br/>
+    <br/>
+    <label> Enter password: </label>
+    <input type="password" name="password" [(ngModel)]="password"/>
+    <br/>
+    <br/>
+    <button class="btn btn-primary" (click)="onClickSubmit()"> Submit</button>
+    <div>
+      <nav>
+        <a routerLink="/register"
+           routerLinkActive="active">
+          <strong>New User? Click here to register</strong>
+        </a>
+      </nav>
+      
+    </div>
+      
+      
+  </div>
+</form>
+
+
